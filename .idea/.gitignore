@@ -1,0 +1,40 @@
+# --- Default ignored files
+/shelf/
+/workspace.xml
+# --- Editor-based HTTP Client requests
+/httpRequests/
+# --- Ignored default folder with query files
+/queries/
+# --- Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# --- compiled files
+out/
+*.class
+
+# --- personal data
+data/*.csv
+
+
+.env
+*.env
+apikey.txt
+secrets.properties
+
+# --- IDE ---
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# --- ОС ---
+.DS_Store
+Thumbs.db
+
+# --- Maven/Gradle
+target/
+build/
+.gradle/
