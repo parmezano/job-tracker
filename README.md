@@ -33,9 +33,21 @@ in a local CSV file and helps you stay on top of follow-ups.
   who to reach out to
 - All data persists between runs in a local CSV file
 
+## Getting started
+
+Clone the repository:
+```
+git clone parmezano/job-tracker
+cd job-tracker
+```
+
+Then follow the compile/run steps below.
+
+
 ## How to run
 
 Requires a JDK (not just a JRE), version 17 or newer.
+
 
 Compile (run from the project root):
 ```
