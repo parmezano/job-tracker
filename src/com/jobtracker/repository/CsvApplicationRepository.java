@@ -32,7 +32,7 @@ public class CsvApplicationRepository implements ApplicationRepository {
         }
     }
 
-    CsvApplicationRepository(Path filePath){
+    public CsvApplicationRepository(Path filePath){
         this.filePath = filePath;
         ensureFileExists();
     }

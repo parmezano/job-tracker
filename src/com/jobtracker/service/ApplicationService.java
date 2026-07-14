@@ -24,8 +24,11 @@ public class ApplicationService {
         int id = repository.nextId();
         LocalDate appliedDay = LocalDate.now();
 
-        return new Application(id, company, position, jobUrl, jobDescription,
+        Application app = new Application(id, company, position, jobUrl, jobDescription,
                 appliedDay, Status.APPLIED, appliedDay, notes);
+
+        repository.save(app);
+        return app;
     }
 
     public List<Application> listAll() {
