@@ -16,17 +16,18 @@ public class Application {
     private Status status;
     private LocalDate lastStatusChange;
 
-    Application(String company,String position,String jobUrl,String
-            jobDescription,String notes) {
-        this.id = nextId++;
+    public Application(int id, String company, String position, String jobUrl,
+                       String jobDescription, LocalDate appliedDate, Status status,
+                       LocalDate lastStatusChange, String notes) {
+        this.id = id;
         this.company = company;
         this.position = position;
         this.jobUrl = jobUrl;
         this.jobDescription = jobDescription;
+        this.appliedDate = appliedDate;
+        this.status = status;
+        this.lastStatusChange = lastStatusChange;
         this.notes = notes;
-        this.appliedDate = LocalDate.now();
-        this.lastStatusChange = LocalDate.now();
-        this.status = Status.APPLIED;
     }
 
     public int getId() { return id; }
