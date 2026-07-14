@@ -7,5 +7,5 @@ public enum Status {
     REJECTED,
     WITHDRAWN;
 
-    boolean isActive(){ return this == APPLIED || this == INTERVIEWING;}
+    public boolean isActive(){ return this == APPLIED || this == INTERVIEWING;}
 }
